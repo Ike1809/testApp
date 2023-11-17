@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.tutorappfx.UserController" stylesheets="@style.css">
+    <SplitPane dividerPositions="0.5" orientation="HORIZONTAL">
+        <items>
+            <!-- Schedule Grid on the Left -->
+            <VBox>
+                <GridPane fx:id="scheduleGrid">
+
+                    <!-- Fill in the time slots with your data -->
+                </GridPane>
+            </VBox>
+
+            <!-- Detail Panels on the Right -->
+            <VBox>
+                <!-- Session Details -->
+                <VBox>
+                    <Label text="FRIDAY SESSION 2-3 PM"/>
+                    <Label text="Subject: Biology"/>
+                    <Label text="Tutee: Tom Tierney"/>
+                    <Label text="Group session: No"/>
+                    <TextArea fx:id="optionalMessage" promptText="Optional Message"/>
+                    <Button text="Delete Meeting"/>
+                </VBox>
+
+                <!-- Upcoming Tutorials List -->
+                <VBox>
+                    <Label text="UPCOMING TUTORIALS"/>
+                    <ListView fx:id="upcomingTutorialsList">
+                        <!-- Populate with upcoming tutorials -->
+                    </ListView>
+                </VBox>
+
+                <!-- Analytics Section -->
+                <VBox>
+                    <Label text="ANALYTICS"/>
+                    <HBox>
+                        <Label text="Ratings: 9.2/10"/>
+                        <Label text="Hours tutored: 23"/>
+                    </HBox>
+                </VBox>
+            </VBox>
+        </items>
+    </SplitPane>
+</VBox>
+
